@@ -5,13 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Введите имя исходного файла (например, input.txt): ");
+        Console.Write("Введите имя исходного файла: ");
         string inputFileName = Console.ReadLine();
 
         // Проверяем, существует ли файл
         if (!File.Exists(inputFileName))
         {
-            Console.WriteLine("Ошибка: файл '" + inputFileName + "' не найден. Работа программы завершена.");
+            Console.WriteLine("Ошибка: файл '" + inputFileName + "' не найден.");
             Console.ReadLine();
             return; // Завершаем выполнение метода Main и всей программы
         }
